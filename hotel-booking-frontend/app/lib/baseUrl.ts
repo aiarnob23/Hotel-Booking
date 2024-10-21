@@ -1,1 +1,1 @@
-export const serverBaseUrl = `http://localhost:4000/api/v1`;
+export const serverBaseUrl = `https://hotel-booking-backend-zeta.vercel.app/api/v1`;
