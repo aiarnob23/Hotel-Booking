@@ -27,7 +27,11 @@ export default function SignInBtn() {
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         <Button
-          onClick={() => signIn("google", { callbackUrl: "/" })}
+          onClick={() =>
+            signIn("google", {
+              callbackUrl: "https://hotel-booking-frontend-teal.vercel.app/",
+            })
+          }
           color="primary"
           size="lg"
           className="rounded-full px-10 py-4 shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"

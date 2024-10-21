@@ -74,7 +74,10 @@ export default function App() {
           <NavbarItem className=" lg:flex lg:-mr-[200px]">
             <Button
               onClick={() => {
-                signIn("google", { callbackUrl: "/" });
+                signIn("google", {
+                  callbackUrl:
+                    "https://hotel-booking-frontend-teal.vercel.app/",
+                });
               }}
             >
               Sign In
