@@ -9,6 +9,7 @@ import {
   FaBed,
   FaDollarSign,
 } from "react-icons/fa";
+import BookingSkeleton from "../components/skeletons/BookingCartSkeleton";
 
 export default function Bookings() {
   const [bookings, setBookings] = useState<any[]>([]);
@@ -34,7 +35,7 @@ export default function Bookings() {
     fetchBookings();
   }, [fetchBookings]);
 
-  if (loading) return <div className="text-center text-lg">Loading...</div>;
+  if (loading) return <div className=" min-h-screen "><BookingSkeleton/></div>;
   if (error) return <div className="text-center text-red-500">{error}</div>;
 
   return (
