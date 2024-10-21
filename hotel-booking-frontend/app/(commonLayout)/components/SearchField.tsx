@@ -59,7 +59,7 @@ export default function SearchField() {
   return (
     <div className="p-4 rounded-lg shadow-md border-2 mx-auto">
       <form onSubmit={handleHotelSearch}>
-        <div className="flex relative items-cente justify-between space-x-2">
+        <div className="flex flex-col gap-2 lg:flex-row relative items-cente justify-between space-x-2">
           {/* Hotel Input */}
           <div className="relative flex rounded-lg items-center flex-1 border px-4 py-2">
             <Input
@@ -139,7 +139,7 @@ export default function SearchField() {
           </div>
 
           {isRoomMenuOpen && (
-            <div className="absolute z-10 bg-white dark:bg-black  border right-20 top-[60px]  mt-2 p-4 rounded-lg shadow-lg max-w-xs">
+            <div className="absolute z-10 bg-white dark:bg-slate-500 md:dark:bg-black  border right-20 top-[30px] lg:top-[60px] mt-2 p-4 rounded-lg shadow-lg max-w-xs">
               {/* Rooms */}
               <div className="flex items-center justify-between py-2">
                 <p>Rooms</p>

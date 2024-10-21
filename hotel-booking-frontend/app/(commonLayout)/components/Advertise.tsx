@@ -1,7 +1,7 @@
 // Advertises.tsx
 export default function Advertises() {
   return (
-    <div className="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300">
+    <div className="bg-gray-100 mx-4 lg:mx-auto dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300">
       <h2 className="text-2xl font-bold mb-4 text-gray-800 dark:text-white">
         Why choose us
       </h2>

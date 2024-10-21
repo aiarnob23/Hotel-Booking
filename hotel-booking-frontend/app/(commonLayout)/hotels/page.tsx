@@ -13,6 +13,7 @@ import {
 import { motion } from "framer-motion";
 import { differenceInDays } from "date-fns";
 import { serverBaseUrl } from "@/app/lib/baseUrl";
+import HotelSkeleton from "../components/skeletons/HotelsSkeleton";
 
 export default function Hotels() {
   return (
@@ -162,7 +163,7 @@ function HotelsContent() {
           Available Hotels
         </h2>
 
-        {loading && <p className="mt-4 text-blue-500">Loading hotels...</p>}
+        {loading && <div className="mt-4"><HotelSkeleton/></div>}
         {error && <p className="mt-4 text-red-500">{error}</p>}
         {!loading && !error && hotels.length === 0 && (
           <p className="mt-4 text-gray-500">No hotels found.</p>

@@ -10,6 +10,7 @@ import { signIn } from "next-auth/react";
 import { useUser } from "@/app/providers";
 import Swal from "sweetalert2";
 import { createBooking } from "../../components/utils/createBooking";
+import HotelDetailsSkeleton from "../../components/skeletons/HotelDetailsSkeleton";
 
 export default function HotelDetails() {
   const params = useParams();
@@ -88,7 +89,11 @@ function HotelDetailsContent({ hotelId }:{hotelId:any}) {
   };
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <HotelDetailsSkeleton />
+      </div>
+    );
   }
 
   if (error) {
@@ -344,7 +349,7 @@ function HotelDetailsContent({ hotelId }:{hotelId:any}) {
               </ul>
             </motion.div>
 
-            {/* Other hotel details like description, facilities, house rules can go here */}
+      
           </>
         ) : (
           <p>No details available for this hotel.</p>

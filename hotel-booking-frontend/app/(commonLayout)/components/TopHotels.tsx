@@ -46,14 +46,14 @@ export default function TopHotels() {
   };
 
   return (
-    <div className="container mx-auto my-12">
+    <div className="container mx-auto p-4 lg:p-0 my-12">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         className="mt-8"
       >
-        <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
+        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-100">
           Top Rated Hotels
         </h2>
 
