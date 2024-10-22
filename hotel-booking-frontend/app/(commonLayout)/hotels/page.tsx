@@ -74,6 +74,9 @@ function HotelsContent() {
     fetchHotels();
   }, [fetchHotels]);
 
+
+
+
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 p-6">
       <SearchField />

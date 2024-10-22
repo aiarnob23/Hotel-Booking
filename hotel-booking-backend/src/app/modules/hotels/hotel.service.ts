@@ -24,7 +24,7 @@ const getHotels = async (searchTerm: any) => {
     ];
   }
 
-  const result = await Hotel.find(query, {name:1, location:1});
+  const result = await Hotel.find(query, {name:1, location:1, images:1});
   console.log(result);
   return result;
 };
