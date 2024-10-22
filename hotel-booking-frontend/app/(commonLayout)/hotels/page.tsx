@@ -180,7 +180,7 @@ function HotelsContent() {
                 whileHover={{ scale: 1.02 }}
               >
                 <img
-                  src={hotel?.imageUrl || "/default-hotel.jpg"}
+                  src={hotel?.images[0] || "/default-hotel.jpg"}
                   alt={hotel?.name}
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
